@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-1-单片机概述" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/31/1-%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/" class="article-date">
+  <time class="dt-published" datetime="2023-10-31T09:06:54.000Z" itemprop="datePublished">2023-10-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/10/31/1-%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/">1-单片机概述</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="单片机简介"><a href="#单片机简介" class="headerlink" title="单片机简介"></a>单片机简介</h2><h4 id="1-为什么叫51单片机"><a href="#1-为什么叫51单片机" class="headerlink" title="1.为什么叫51单片机"></a>1.为什么叫51单片机</h4><p>51单片机是指80年代Intel开发的8051单片机内核的统称，就是因为这个“8051”有个51，所以凡是与“8051”内核一样的单片机都统称为51系列单片机。51单片机是对兼容<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%8B%B1%E7%89%B9%E5%B0%94/305730?fromModule=lemma_inlink">英特尔</a>8051<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/3220297?fromModule=lemma_inlink">指令系统</a>的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8D%95%E7%89%87%E6%9C%BA/102396?fromModule=lemma_inlink">单片机</a>的统称。51单片机广泛应用于家用电器、汽车、工业测控、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%80%9A%E4%BF%A1%E8%AE%BE%E5%A4%87/10476282?fromModule=lemma_inlink">通信设备</a>中。因为51单片机的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/3220297?fromModule=lemma_inlink">指令系统</a>、内部结构相对简单，所以国内许多高校用其进行单片机入门教学。</p>
+<h4 id="2-RAM"><a href="#2-RAM" class="headerlink" title="2.RAM"></a>2.RAM</h4><p>RAM是<strong>随机存取存储器</strong>（random access memory），是计算机<strong>内部存储器</strong>中的一种，也是其中最重要的，计算机和手机中一般把其叫做<strong>（运行）内存</strong>，它的速度要比硬盘快得多，所以用运行程序在RAM中，而存放运行时不用的数据则在硬盘中，什么时候需要数据，便把数据从硬盘中拿到内存，但同时RAM断电会丢失数据，所以我们电脑如果断电了就会丢失原来正在运行的数据。所以，手机中的RAM和电脑中的RAM的概念是相同的，RAM即内存越大，能同时在内存中执行的程序就越多，性能一般是越好的。</p>
+<h4 id="3-ROM"><a href="#3-ROM" class="headerlink" title="3.ROM"></a>3.ROM</h4><p>ROM是<strong>只读存储器（Read-Only Memory）</strong>，也是计算机<strong>内部存储器</strong>中的一种，而硬盘是<strong>外部存储器</strong>,BIOS应该是用到ROM的那个。那么ROM究竟是干什么的，ROM和硬盘是否就没有任何关系呢？这就要从其发展历程说起，早期，乃至现在，我们的主要存储介质都是<strong>磁性存储</strong>，也就是磁盘，分为硬盘和软盘，硬盘不太适合做移动存储，因为其磁头容易损坏，不耐摔，而且体积较大，就算是缩小容量仍然很难缩小其体积，软盘虽然用作移动介质还算方便，但软盘容量过于小，不够用，而光盘虽然容量大但不易擦写，同时体积也不够小，这时就很适合使用<strong>半导体存储介质</strong>——ROM和RAM，ROM用来嵌入电脑主板或者做移动存储介质就很合适了，其体积够小，提供的容量可以比光盘和软盘的大，速度也更快，但成本相对更高，而且早期的ROM因为技术不成熟所以无法擦写，出厂后就只能读数据，所以叫只读存储器，后来随着技术的发展，在ROM的基础上出现了新的半导体存储介质<strong>EPROM和EEPROM</strong>，这两种可擦写，这就不符合ROM的命名，但是由于是在ROM的技术上衍变出来的，所以延用了一部分原来的叫法，此时非易失的半导体存储介质开始得以广泛应用，被大量用于电脑主板的bios和嵌入式存储，而后来在这两种技术的发展上又发展出了<strong>NAND FLASH闪存，</strong>这就是我们现在用的U盘中用到的技术，同样，因为其体积小，容量和速度均不错，现在手机存储中的emmc颗粒也是用的这种技术，所以有手机厂商就把手机的存储容量约定俗成为ROM，其继承ROM断电不丢失数据的特性，而且有着较快的速度。</p>
+<p>那么电脑硬盘和ROM有什么关系呢？由于ROM和硬盘都可以存储数据而且断电不会丢失，而有都广泛运用于电子产品中，所以有人就对两者产生了混淆。硬盘分为两种，一种是<strong>机械硬盘</strong>（即磁盘HDD）,一种是<strong>固态硬盘（SSD），</strong>磁盘和ROM没什么关系，但是固态硬盘就不一样了，固态硬盘用到的颗粒也是<strong>基于NAND FLASH技术</strong>，和u盘以及手机存储有点相似，所以说硬盘和ROM还是有关系的，固态硬盘的存储颗粒是ROM技术发展的产物，<strong>但不能说ROM就是硬盘。</strong></p>
+<h2 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h2><p>STC89 XX  XX  –  35  X  -  XXXX   XX（STC89C52）</p>
+<p>STC:表示STC公司</p>
+<p>**89:**表示一个系列—-STC 12T&#x2F;6T 8051系列</p>
+<p><strong>C：</strong>表示工作电压：5.5V<del>3.8V			LE：3.6V</del>2.4V&#x2F;3.4V~2.4V</p>
+<p>52:程序空间及RAM空间大小，如：</p>
+<ul>
+<li>51是4K<strong>字节程序空间</strong>及512字节<strong>RAM空间</strong>,</li>
+<li>52是8K字节程序空间及512字节RAM空间，</li>
+<li>53是12K字节程序空间及512字节RAM空间，</li>
+<li>14是14K字节程序空间及512字节RAM空间;</li>
+<li>54是16K字节程序空间及1280字节RAM空间,</li>
+<li>58是32K字节程序空间及1280字节RAM空间，</li>
+<li>516是62K字节程序空间及1280字节RAM空间，</li>
+<li>510是40K字节程序空间及1280字节RAM空间，</li>
+<li>512是48K字节程序空间及1280字节RAM空间，</li>
+<li>514是56K字节程序空间及1280字节RAM空间.</li>
+</ul>
+<p>35：工作频率，可达到35MHZ</p>
+<p>X:工作温度范围：</p>
+<ul>
+<li>I：工业级：-40℃~85℃</li>
+<li>C：商业级：0℃~70℃</li>
+</ul>
+<p>XXXX：封装类型	如：PDIP,LQFP,PLCC,PQFP</p>
+<p>XX：管脚数，如40或44</p>
+<p><img src="E:\md_picture\image-20230520132137006.png" alt="image-20230520132137006"></p>
+<h2 id="内部结构"><a href="#内部结构" class="headerlink" title="内部结构"></a>内部结构</h2><p><img src="E:\md_picture\image-20230520132552747.png" alt="image-20230520132552747"></p>
+<p><img src="E:\md_picture\image-20230520132808278.png" alt="image-20230520132808278"></p>
+<h2 id="单片机管脚图"><a href="#单片机管脚图" class="headerlink" title="单片机管脚图"></a>单片机管脚图</h2><p><img src="E:\md_picture\image-20230520132907821.png" alt="image-20230520132907821"></p>
+<h2 id="STC89C52系列单片机最小应用系统"><a href="#STC89C52系列单片机最小应用系统" class="headerlink" title="STC89C52系列单片机最小应用系统"></a>STC89C52系列单片机最小应用系统</h2><p><img src="E:\md_picture\WBTSRB4AZWL$YN03MM$QPIG.png" alt="WBTSRB4AZWL$YN03MM$QPIG"></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>1.<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/88202063">RAM和ROM的区别（转） - 知乎 (zhihu.com)</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/31/1-%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/" data-id="cloe415270000ikwlgwqmc26w" data-title="1-单片机概述" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/" rel="tag">51单片机</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/31/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2023-10-31T08:13:56.867Z" itemprop="datePublished">2023-10-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/10/31/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/10/31/hello-world/" data-id="cloe4152c0001ikwl8rv684ao" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/" rel="tag">51单片机</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 10px;">51单片机</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/31/1-%E5%8D%95%E7%89%87%E6%9C%BA%E6%A6%82%E8%BF%B0/">1-单片机概述</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/31/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
